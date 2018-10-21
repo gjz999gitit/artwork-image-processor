@@ -53,8 +53,8 @@ Give an example
 
 TODO: Add additional notes about how to deploy this on a live system
 
-## Contributing
 
+## Contributing
 TODO: Create Contribution Guidelines
 
 Ex:
@@ -70,7 +70,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 * **Cecil Beeland** - *Initial work* - [beelandc](https://github.com/beelandc)
 * **Camille Rosewright** - *Initial work* - [kamiyokamiru](https://github.com/kamiyokamiru)
 * **Wunyan Wong** - *Initial work* - [wunyanw](https://github.com/wunyanw)
-* **Greg Zimmerman** - *Initial work* - [TODO](https://github.com/)
+* **Greg Zimmerman** - *Initial work* - [gjz999gitit](https://github.com/gjz999gitit)
 
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
