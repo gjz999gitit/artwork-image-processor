@@ -11,7 +11,8 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
-import django_heroku
+import dj_database_url
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -119,19 +120,29 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') 
 
-#STATIC_ROOT = os.path.join(MEDIA_ROOT, 'static')
 
-MEDIA_URL = '/media/'
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    os.path.join(MEDIA_ROOT, "static"),
-    #'/var/www/static/',
+
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+
+MEDIA_URL = '/media/'
+
+STATICFILES_DIRS = (
+#    os.path.join(BASE_DIR, 'static'),
+
+    os.path.join(MEDIA_ROOT, 'static'),
+ 
+    os.path.join(BASE_DIR, 'artwork_image_processor', 'static')
+)
 ]
 
-django_heroku.settings(locals())
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
